@@ -1,0 +1,75 @@
+.weather {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    top: 0;
+    overflow: hidden;
+    z-index: 0;
+  
+    &_cloud {
+      position: absolute;
+    }
+
+    img {
+        object-fit: contain;
+        -khtml-user-select: none;
+        -o-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    .cloud1 {
+        top: 5%;
+        left: -25rem;
+        width: 20rem;
+    }
+    
+    .cloud2 {
+        top: 10%;
+        left: -25rem;
+       width: 20rem;
+    }
+
+    .cloud3 {
+        top: 20%;
+        left: -20rem;
+        width: 20rem;
+    }
+
+    .cloud4 {
+        top: 30%;
+        left: -20rem;
+        width: 20rem;
+    }
+
+    .cloud5 {
+        top: 40%;
+        left: -20rem;
+        width: 20rem;
+    }
+
+    .cloud6 {
+        top: 50%;
+        left: -20rem;
+        width: 20rem;
+    }
+
+    .cloud7 {
+        bottom: 55%;
+        left: -20rem;
+        width: 20rem;
+    }
+
+    .cloud8 {
+        bottom: 60%;
+        left: -20rem;
+       width: 20rem;
+    }
+
+    .cloud9 {
+        bottom: 65%;
+        left: -20rem;
+        width: 20rem;
+    }
+} 

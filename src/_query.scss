@@ -1,0 +1,116 @@
+@media screen and (max-width: 750px) {
+    #app {
+        .taskbar {
+            p {
+                font-size: 80%;
+            }
+            &_apps {
+                justify-content: center;
+                gap: 0rem;
+                width: 80%;
+
+                .app-icon {
+                    width: 3rem;
+                    padding: .2rem;
+                }
+            }
+
+            .big {
+                display: none;
+            }
+
+            .small {
+                display: block; 
+            }
+        }
+
+        .intro {
+            width: 90vw;
+        }
+
+        .about {
+            width: 90vw;
+            p {
+                font-size: 90%;
+            }
+        }
+
+        .education {
+            width: 90vw;
+
+            .douglas {
+                width: 3rem;
+                height: 3rem;
+              }
+              .fcc {
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+        
+        .skills {
+            width: 90vw;
+            overflow-y: scroll;
+            height: 70vh;
+            &_lang {
+                ul {
+                    flex-wrap: wrap;
+                    gap: 1rem;
+                }
+            }
+
+            &_other {
+                ul {
+                    flex-wrap: wrap;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #app {
+        .education {
+            height: 70vh;
+            overflow-y: auto;
+            &_list {
+                li {
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .taskbar {
+            &_apps {
+                overflow-x: scroll;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 330px) {
+    #app {
+        .projects {
+            ul {
+                li {
+                    a {
+                        img {
+                            max-width: 10rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact {
+            width: 90vw;
+            &_sub {
+                img {
+                    width: 3.5rem;
+                }
+            }
+        }
+    }
+
+}
