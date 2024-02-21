@@ -12,7 +12,7 @@ export default function Intro() {
                     <p>An aspiring <span className="color-fade">Frontend Developer</span></p>
                 </div>
                 <div className="intro_bot">
-                    <p>Welcome to my portfolio site! In the apps on the psuedo desktop, you can get to know about my background, skills, projects and all that jazz.</p>
+                    <p>Welcome to my portfolio site! In the apps on this psuedo desktop, you can get to know about my background, skills, projects and all that jazz.</p>
                     <p>If this is an eyesore to you, I also have a more generic and boring version at this <a target="_blank" href="https://vakeemdevlin2.onrender.com/">link</a>.</p>
                 </div>
             </section>
