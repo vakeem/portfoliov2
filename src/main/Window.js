@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from "react";
 
-import { CurrentContext, AppsContext, HiddenContext } from "./App";
+import { CurrentContext, AppsContext, HiddenContext } from "../App";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -31,7 +31,7 @@ export default function Window({content, id, setCurrent, setApps, setHidden}) {
     })
     
     return (
-        <div className={`window ${value === id ? 'current' : ''} ${hidden.includes(id) ? 'hidden' : ''}`} ref={window} id={id} onClick={() => setCurrent(id)}>
+        <div className={`window${value === id ? ' current' : ''}${hidden.includes(id) ? ' hidden' : ''}`} ref={window} id={id} onClick={() => setCurrent(id)}>
             <div className="window_nav">
                 <h3>{id}</h3>
                 <div className="window_nav_btn">

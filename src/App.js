@@ -5,9 +5,9 @@ import gsap from "gsap";
 import { Draggable } from "gsap/Draggable";
 import { useGSAP } from "@gsap/react";
 
-import Taskbar from "./Taskbar";
-import Clouds from "./Clouds";
-import Desktop from "./Desktop";
+import Taskbar from "./main/Taskbar";
+import Clouds from "./main/Clouds";
+import Desktop from "./main/Desktop";
 
 export const CurrentContext = createContext();
 export const AppsContext = createContext();
@@ -17,7 +17,7 @@ gsap.registerPlugin(Draggable)
 
 function App () {
     const [apps, setApps] = useState([])
-    const [current, setCurrent] = useState('')
+    const [current, setCurrent] = useState('INTRO')
     const [hidden, setHidden] = useState([])
 
     useGSAP(()=>{

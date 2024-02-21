@@ -8,23 +8,23 @@ export default function Skills() {
                     <h3>Languages</h3>
                     <ul >
                         <li>
-                            <img src="./public/icons/python.svg" alt="Python SVG"/>
+                            <img src="../public/icons/python.svg" alt="Python SVG"/>
                             <p>Python</p>
                         </li>
                         <li>
-                            <img src="./public/icons/html.svg" alt="HTML SVG"/>
+                            <img src="../public/icons/html.svg" alt="HTML SVG"/>
                             <p>HTML</p>
                         </li>
                         <li>
-                            <img src="./public/icons/css.svg" alt="CSS SVG"/>
+                            <img src="../public/icons/css.svg" alt="CSS SVG"/>
                             <p>CSS</p>
                         </li>
                         <li>
-                            <img src="./public/icons/js.svg" alt="Javascript SVG"/>
+                            <img src="../public/icons/js.svg" alt="Javascript SVG"/>
                             <p>Javascript</p>
                         </li>
                         <li>
-                            <img src="./public/icons/sass.svg" alt="Sass SVG"/>
+                            <img src="../public/icons/sass.svg" alt="Sass SVG"/>
                             <p>Sass</p>
                         </li>
                     </ul>
@@ -34,31 +34,31 @@ export default function Skills() {
                     <h3>Frameworks & Libraries</h3>
                     <ul>
                         <li>
-                            <img src="./public/icons/react.svg" alt="React SVG"/>
+                            <img src="/public/icons/react.svg" alt="React SVG"/>
                             <p>ReactJs</p>
                         </li>
                         <li>
-                            <img src="./public/icons/git.svg" alt="Git SVG"/>
+                            <img src="/public/icons/git.svg" alt="Git SVG"/>
                             <p>Git</p>
                         </li>
                         <li>
-                            <img src="./public/icons/tailwindcss.svg" alt="tailwindcss SVG"/>
+                            <img src="/public/icons/tailwindcss.svg" alt="tailwindcss SVG"/>
                             <p>tailwindcss</p>
                         </li>
                         <li>
-                            <img src="./public/icons/gsap.svg" alt="GSAP SVG"/>
+                            <img src="/public/icons/gsap.svg" alt="GSAP SVG"/>
                             <p>GSAP</p>
                         </li>
                         <li>
-                            <img src="./public/icons/threejs.svg" alt="Three.js SVG"/>
+                            <img src="/public/icons/threejs.svg" alt="Three.js SVG"/>
                             <p>Three.js</p>
                         </li>
                         <li>
-                            <img src="./public/icons/webpack.svg" alt="Webpack SVG"/>
+                            <img src="/public/icons/webpack.svg" alt="Webpack SVG"/>
                             <p>Webpack</p>
                         </li>
                         <li>
-                            <img src="./public/icons/npm.svg" alt="npm SVG"/>
+                            <img src="/public/icons/npm.svg" alt="npm SVG"/>
                             <p>npm</p>
                         </li>
                     </ul>

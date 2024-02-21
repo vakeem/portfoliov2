@@ -5,29 +5,33 @@ export default function Contact() {
         <section id="contact" className="contact">
                 <div className="contact_main">
                     <h2 >Contact Me</h2>
-                    <a href="./public/download/resume.pdf" target="_blank">View Resume</a>
                     <address>Vancouver, Canada</address>
-                    <a href = "mailto: vakeem18@gmail.com">vakeem18@gmail.com</a>
+                    <a className="email" href = "mailto: vakeem18@gmail.com">vakeem18@gmail.com</a>
+                    <a className="resume" href="./public/download/resume.pdf" target="_blank">VIEW RESUME</a>
                 </div>
                 <div className="contact_sub">
                     <h2>Find me on</h2>
                     <ul>
                         <li>
                             <a target="_blank" href="https://www.linkedin.com/in/vakeem-d-5a94682b1/">
-                                <img src="./public/icons/linkedin.svg" alt="Linkedin SVG"/>
+                                <img src="../public/icons/linkedin.svg" alt="Linkedin SVG"/>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://github.com/vakeem">
-                                <img src="./public/icons/github.svg" alt="Github SVG"/>
+                                <img src="../public/icons/github.svg" alt="Github SVG"/>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://stackoverflow.com/users/23317477/vdev">
-                                <img src="./public/icons/stackoverflow.svg" alt="stackoverflow SVG"/>
+                                <img src="../public/icons/stackoverflow.svg" alt="stackoverflow SVG"/>
                             </a>
                         </li>
                     </ul>
+                </div>
+                <div className="contact_bot">
+                    <h2>GITHUB FOR THIS SITE</h2>
+                    <a target="_blank" href="https://github.com/vakeem/portfoliov2">VIEW REPO</a>
                 </div>
             </section>
     )

@@ -82,17 +82,6 @@ export default function Projects() {
                         </div>
                     </a>
                 </li>
-                <li>
-                    <a href="https://startup-template1.onrender.com/" target="_blank" >
-                        <img src="/public/images/startup.png" ></img>
-                        <div>
-                            <h3>
-                                Startup
-                            </h3>
-                            <p>Startup template</p>
-                        </div>
-                    </a>
-                </li>
             </ul>
         </section>
     )

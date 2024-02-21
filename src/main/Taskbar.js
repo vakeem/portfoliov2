@@ -9,11 +9,10 @@ export default function Taskbar({apps, setCurrent, current, hidden, setHidden}) 
     })
 
     function handleOpen(id) {
-        console.log(newArr(hidden, id))
-        setHidden(newArr(hidden, id))
         setCurrent(id)
+        setHidden(newArr(hidden, id))
         if (checkArr(hidden, id)) {
-            gsap.fromTo(`#${id}`,{y: '60rem'}, {y: '10vh', ease: 'back', duration: 1})
+            gsap.fromTo(`#${id}`,{y: '60rem'}, {y: '10vh', ease: 'back', duration: 1, onComplete() {console.log(id)}})
         }
     }
 
@@ -28,25 +27,25 @@ export default function Taskbar({apps, setCurrent, current, hidden, setHidden}) 
                     return (
                         item[0] === "INTRO"
                         ?
-                        <img className={`app-icon ${current === "INTRO" && !hidden.includes('INTRO') ? 'active' : ''}`} src="./public/app-icons/crown.png" onClick={() => handleOpen(item[0])}></img>
+                        <img key={item} draggable={false} className={`app-icon ${current === "INTRO" && !hidden.includes('INTRO') ? 'active' : ''}`} src="./public/app-icons/crown.png" onClick={() => handleOpen(item[0])}></img>
                         :
                         item[0] === "ABOUT"
                         ?
-                        <img className={`app-icon ${current === "ABOUT" && !hidden.includes('ABOUT') ? 'active' : ''}`} src="./public/app-icons/users.png" onClick={() => handleOpen(item[0])}></img>
+                        <img key={item} draggable={false} className={`app-icon ${current === "ABOUT" && !hidden.includes('ABOUT') ? 'active' : ''}`} src="./public/app-icons/users.png" onClick={() => handleOpen(item[0])}></img>
                         :
                         item[0] === "EDUCATION"
                         ?
-                        <img className={`app-icon ${current === "EDUCATION" && !hidden.includes('EDUCATION') ? 'active' : ''}`} src="./public/app-icons/trophy.png" onClick={() => handleOpen(item[0])}></img>
+                        <img key={item} draggable={false} className={`app-icon ${current === "EDUCATION" && !hidden.includes('EDUCATION') ? 'active' : ''}`} src="./public/app-icons/trophy.png" onClick={() => handleOpen(item[0])}></img>
                         :
                         item[0] === "SKILLS"
                         ?
-                        <img className={`app-icon ${current === "SKILLS" && !hidden.includes('SKILLS') ? 'active' : ''}`} src="./public/app-icons/star.png" onClick={() => handleOpen(item[0])}></img>
+                        <img key={item} draggable={false} className={`app-icon ${current === "SKILLS" && !hidden.includes('SKILLS') ? 'active' : ''}`} src="./public/app-icons/star.png" onClick={() => handleOpen(item[0])}></img>
                         :
                         item[0] === "PROJECTS"
                         ?
-                        <img className={`app-icon ${current === "PROJECTS" && !hidden.includes('PROJECTS') ? 'active' : ''}`} src="./public/app-icons/note.png" onClick={() => handleOpen(item[0])}></img>
+                        <img key={item} draggable={false} className={`app-icon ${current === "PROJECTS" && !hidden.includes('PROJECTS') ? 'active' : ''}`} src="./public/app-icons/note.png" onClick={() => handleOpen(item[0])}></img>
                         :
-                        <img className={`app-icon ${current === "CONTACT" && !hidden.includes('CONTACT') ? 'active' : ''}`} src="./public/app-icons/send.png" onClick={() => handleOpen(item[0])}></img>
+                        <img key={item} draggable={false} className={`app-icon ${current === "CONTACT" && !hidden.includes('CONTACT') ? 'active' : ''}`} src="./public/app-icons/send.png" onClick={() => handleOpen(item[0])}></img>
                     )
                 })}
             </div>
@@ -84,9 +83,9 @@ function newArr(arr, id) {
     return temp
 }
 
-function checkArr(state, name) {
-    for (let i = 0; i < state.length; i++) {
-        if (state[i] === name) {
+function checkArr(arr, name) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === name) {
             return true
         }
     }

@@ -3,12 +3,12 @@ import React, {useRef, useEffect, useContext} from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-import Intro from "./Intro";
-import About from "./About";
-import Education from "./Education";
-import Skills from "./Skills";
-import Projects from "./Projects";
-import Contact from "./Contact";
+import Intro from "../pages/Intro";
+import About from "../pages/About";
+import Education from "../pages/Education";
+import Skills from "../pages/Skills";
+import Projects from "../pages/Projects";
+import Contact from "../pages/Contact";
 
 import Window from "./Window";
 
@@ -16,7 +16,6 @@ export default function Desktop({apps, setApps, setCurrent, current, setHidden, 
 
     useEffect(() => {
        setApps([["INTRO",<Window setHidden={setHidden} setApps={setApps} setCurrent={setCurrent} id={"INTRO"} content={<Intro/>}/>]])
-       setCurrent("INTRO") 
     },[])
 
     function handleClick(name,component) {
@@ -32,15 +31,6 @@ export default function Desktop({apps, setApps, setCurrent, current, setHidden, 
             gsap.fromTo(`#${name}`,{y: '60rem'}, {y: '10vh', ease: 'back', duration: 1})
         }
     }
-
-    useEffect(() => {
-        console.log(apps)
-    }, [apps])
-
-    useEffect(() => {
-        console.log(current)
-    }, [current])
-
  
     return (
         <ul className="desktop">
