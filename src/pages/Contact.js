@@ -29,10 +29,6 @@ export default function Contact() {
                         </li>
                     </ul>
                 </div>
-                <div className="contact_bot">
-                    <h2>GITHUB FOR THIS SITE</h2>
-                    <a target="_blank" href="https://github.com/vakeem/portfoliov2">VIEW REPO</a>
-                </div>
             </section>
     )
 }
