@@ -14,9 +14,10 @@ import Window from "./Window";
 
 export default function Desktop({apps, setApps, setCurrent, current, setHidden, hidden}) {
 
-    useEffect(() => {
-       setApps([["INTRO",<Window setHidden={setHidden} setApps={setApps} setCurrent={setCurrent} id={"INTRO"} content={<Intro/>}/>]])
-    },[])
+    useEffect(() =>{
+        const yerr = document.getElementById("intro-btn")
+        yerr.click();
+    }, [])
 
     function handleClick(name,component) {
         setCurrent(name)
@@ -34,7 +35,7 @@ export default function Desktop({apps, setApps, setCurrent, current, setHidden, 
  
     return (
         <ul className="desktop">
-            <li onClick={() => handleClick('INTRO',<Window setHidden={setHidden} setApps={setApps} setCurrent={setCurrent} id={"INTRO"} content={<Intro/>}/>)}>
+            <li id={"intro-btn"} onClick={() => handleClick('INTRO',<Window setHidden={setHidden} setApps={setApps} setCurrent={setCurrent} id={"INTRO"} content={<Intro/>}/>)}>
                 <img src="./public/app-icons/crown.png"></img>
                 <p>INTRO</p>
             </li>
